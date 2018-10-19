@@ -11,9 +11,9 @@
     "jquery": "^3.2.1",
     "jquery-ui": "^1.12.1",
     "moment": "^2.22.2",
-    "react": "^16.0.0",
+    "react": "^16.5.2",
     "react-docgen": "^2.19.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.5.2"
   },
   "scripts": {
     "start": "styleguidist server",
