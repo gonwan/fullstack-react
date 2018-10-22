@@ -5,13 +5,13 @@ import {createStore, applyMiddleware} from 'redux';
 import {reducer} from './11-redux-reducer.js';
 import {fetchPeople, savePeople} from './11-redux-actions.js';
 
-const Form = require('./11-redux-form.js');
+import Form from './11-redux-form.js';
 
 const store = createStore(reducer, applyMiddleware(thunkMiddleware));
 
 const ReduxForm = connect(mapStateToProps, mapDispatchToProps)(Form);
 
-module.exports = class extends React.Component {
+export default class Eleven extends React.Component {
   static displayName = '11-redux-app';
 
   componentDidMount() {

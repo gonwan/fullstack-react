@@ -3,7 +3,7 @@ import React from 'react';
 const content = document.createElement('div');
 document.body.appendChild(content);
 
-module.exports = class extends React.Component {
+export default class Six extends React.Component {
   static displayName = '06-state-input-multi';
 
   state = {
