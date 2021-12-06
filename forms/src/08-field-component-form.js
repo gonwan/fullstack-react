@@ -1,12 +1,12 @@
 import React from 'react';
 import isEmail from 'validator/lib/isEmail';
 
-import Field from './08-field-component-field.js';
+const Field = require('./08-field-component-field.js');
 
 const content = document.createElement('div');
 document.body.appendChild(content);
 
-export default class Eight extends React.Component {
+module.exports = class extends React.Component {
   static displayName = '08-field-component-form';
 
   state = {

@@ -1,37 +1,41 @@
-import React, { PropTypes } from 'react';
+import React from "react";
 
-const CREDITCARD = 'Creditcard';
-const BTC = 'Bitcoin';
+const CREDITCARD = "Creditcard";
+const BTC = "Bitcoin";
 
 class Switch extends React.Component {
   state = {
-    payMethod: BTC,
+    payMethod: BTC
   };
 
-  select = (choice) => {
-    return (evt) => {
+  select = choice => {
+    return evt => {
       // <-- handler starts here
       this.setState({
-        payMethod: choice,
+        payMethod: choice
       });
     };
   };
 
   render() {
     return (
-      <div className='switch'>
+      <div className="switch">
         <div
-          className='choice'
+          className="choice"
           onClick={this.select(CREDITCARD)} // add this
-        >Creditcard</div>
+        >
+          Creditcard
+        </div>
         <div
-          className='choice'
+          className="choice"
           onClick={this.select(BTC)} // ... and this
-        >Bitcoin</div>
+        >
+          Bitcoin
+        </div>
         Pay with: {this.state.payMethod}
       </div>
     );
   }
 }
 
-module.exports = Switch;
+export default Switch;

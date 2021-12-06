@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import isEmail from 'validator/lib/isEmail';
 
-import Field from './08-field-component-field.js';
-import CourseSelect from './09-course-select.js';
+const Field = require('./08-field-component-field.js');
+const CourseSelect = require('./09-course-select.js');
 
-export default class Form extends React.Component {
+module.exports = class extends React.Component {
   static displayName = '11-redux-form';
 
   static propTypes = {

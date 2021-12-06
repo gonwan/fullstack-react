@@ -1,11 +1,15 @@
-import React, { PropTypes } from 'react';
+import React from "react";
 
 class Switch extends React.Component {
   state = {};
 
   render() {
-    return <div><em>Template will be here</em></div>;
+    return (
+      <div>
+        <em>Template will be here</em>
+      </div>
+    );
   }
 }
 
-module.exports = Switch;
+export default Switch;

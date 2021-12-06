@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-export default class Field extends React.Component {
+module.exports = class extends React.Component {
   static propTypes = {
     placeholder: PropTypes.string,
     name: PropTypes.string.isRequired,

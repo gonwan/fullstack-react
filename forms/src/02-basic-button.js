@@ -3,7 +3,7 @@ import React from 'react';
 const content = document.createElement('div');
 document.body.appendChild(content);
 
-export default class Two extends React.Component {
+module.exports = class extends React.Component {
   static displayName = "02-basic-button";
 
   onButtonClick = (evt) => {

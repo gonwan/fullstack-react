@@ -3,7 +3,7 @@ import React from 'react';
 const content = document.createElement('div');
 document.body.appendChild(content);
 
-export default class Five extends React.Component {
+module.exports = class extends React.Component {
   static displayName = "05-state-input";
 
   state = {
